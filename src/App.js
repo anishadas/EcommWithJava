@@ -1,6 +1,6 @@
 import Navigation from './customer/components/Navigation/Navigation'
 
-function App() {
+function App () {
   return (
     <div className='App'>
       <Navigation />

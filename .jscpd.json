@@ -1,0 +1,9 @@
+{
+  "exclude": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/*.test.js"
+  ],
+  "minLines": 15,
+  "minTokens": 70
+}
