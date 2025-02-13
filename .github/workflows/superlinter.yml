@@ -31,5 +31,6 @@ jobs:
           VALIDATE_JAVASCRIPT_STANDARD: false
           FAIL_ON_WARNINGS: false
           FILTER_REGEX_EXCLUDE: "^(node_modules/|dist/)"
+          JSCODE_DUPLICATION_CONFIG_PATH: ./.github/linters/jscpd.config.js
           # Uncomment and customize the following if you have a linter configuration file
           # LINTER_RULES_PATH: .github/linters/
