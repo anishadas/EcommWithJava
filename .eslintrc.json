@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "standard",
+    "prettier" // Disables StandardJS rules that conflict with Prettier
+  ],
+  "plugins": [
+    "prettier" // Enables Prettier rules
+  ],
+  "rules": {
+    "prettier/prettier": "error" // Treat Prettier formatting issues as errors
+  }
+}
