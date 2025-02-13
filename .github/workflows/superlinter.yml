@@ -24,8 +24,6 @@ jobs:
         env:
           # REQUIRED: GitHub Token
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # OPTIONAL: Customize Linter Behavior
-          VALIDATE_ALL_CODEBASE: true
           LINTER_RULES_PATH: ./.github/linters/
           DEFAULT_BRANCH: main
           # Uncomment and customize the following if you have a linter configuration file
