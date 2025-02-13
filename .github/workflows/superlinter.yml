@@ -27,7 +27,7 @@ jobs:
           LINTER_RULES_PATH: ./.github/linters/
           DEFAULT_BRANCH: main
           VALIDATE_ALL_CODEBASE: true
-          VALIDATE_DUPLICATE_CODE: false
+          VALIDATE_DUPLICATE_CODE: true
           VALIDATE_JAVASCRIPT_STANDARD: false
           FAIL_ON_WARNINGS: false
           FILTER_REGEX_EXCLUDE: "^(node_modules/|dist/)"
