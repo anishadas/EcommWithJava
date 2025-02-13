@@ -1,0 +1,31 @@
+name: Lint Code Base
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  super-lint:
+    name: Lint Code Base
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Step 2: Run GitHub Super-Linter
+      - name: Run Super-Linter
+        uses: github/super-linter@v5
+        env:
+          # REQUIRED: GitHub Token
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # OPTIONAL: Customize Linter Behavior
+          VALIDATE_ALL_CODEBASE: true
+          DEFAULT_BRANCH: main
+          # Uncomment and customize the following if you have a linter configuration file
+          # LINTER_RULES_PATH: .github/linters/
