@@ -1,10 +1,11 @@
 import Navigation from './customer/components/Navigation/Navigation'
+import HomePage from "./customer/pages/HomePage/HomePage"
 
-function App () {
+function App() {
   return (
     <div className='App'>
       <Navigation />
-      home
+      <HomePage />
     </div>
   )
 }
