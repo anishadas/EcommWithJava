@@ -1,14 +1,13 @@
-import Navigation from "./customer/components/Navigation/Navigation";
-import HomePage from "./customer/pages/HomePage/HomePage";
-
+import Navigation from './customer/components/Navigation/Navigation'
+import HomePage from "./customer/pages/HomePage/HomePage"
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Navigation />
       <HomePage />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
